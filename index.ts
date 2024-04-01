@@ -12,7 +12,7 @@ while(condition) {
         {
             name: "task",
             type: "input",
-            message: "Enter Your New Task : "
+            message: "Enter Your Task : "
         }
     ]);
 
@@ -30,4 +30,7 @@ while(condition) {
     condition = addMoreTask.addMore
 };
 
-console.log(`Your Updated Todo_List : ${  todo_list }`)
+console.log(chalk.green(`Your Updated Todo_List : `))
+todo_list.forEach(List => console.log(chalk.blue(List)))
+
+

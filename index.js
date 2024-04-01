@@ -24,4 +24,5 @@ while (condition) {
     condition = addMoreTask.addMore;
 }
 ;
-console.log(`Your Updated Todo_List : ${todo_list}`);
+console.log(chalk.green(`Your Updated Todo_List : `));
+todo_list.forEach(List => console.log(chalk.blue(List)));
